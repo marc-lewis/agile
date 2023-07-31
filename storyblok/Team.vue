@@ -62,6 +62,7 @@ function getRandomisedMembers() {
 }
 
 const mute = ref(true);
+Howler.mute(mute.value);
 function toggleAudio() {
   mute.value = !mute.value;
   Howler.mute(mute.value);

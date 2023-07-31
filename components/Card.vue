@@ -9,13 +9,16 @@ const props = defineProps({ name: String });
 <style scoped>
 :root {
   --unit-size: 8px;
-  --black: #222222;
+  --primary: #222222;
+  --secondary: #fefefe;
 }
 .card {
+  background: var(--secondary);
+  color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bold;
   width: 100%;
   aspect-ratio: 1.16;

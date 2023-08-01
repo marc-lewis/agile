@@ -134,7 +134,7 @@ onMounted(() => {
       </div>
     </div>
     <button class="startButton" @click="spin" :disabled="slotMachineLocked">
-      {{ animate ? "Reset" : "Go!" }}
+      {{ animate ? "Reset" : "Spin!" }}
     </button>
     <ul @click="playSound" v-if="blok.members" class="teamMembers">
       <li

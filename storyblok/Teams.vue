@@ -68,9 +68,9 @@ teams.value = data.stories;
   gap: calc(var(--unit-size) * 2);
 }
 .member {
-  background: var(--primary);
+  background: #999999;
   color: var(--secondary);
-  padding: var(--unit-size) calc(var(--unit-size) * 2);
-  border-radius: var(--unit-size);
+  padding: var(--unit-size) var(--unit-size);
+  border-radius: 9999px;
 }
 </style>

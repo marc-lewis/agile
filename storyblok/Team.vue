@@ -151,15 +151,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style scope>
-:root {
-  --unit-size: 8px;
-  --primary: #222222;
-  --secondary: #fefefe;
-}
-body {
-  background: var(--primary);
-}
+<style scoped>
 .team {
   display: flex;
   flex-direction: column;
@@ -169,12 +161,11 @@ body {
   color: #fff;
 }
 .teamName {
-  color: var(--black);
+  color: var(--primary);
   font-size: calc(var(--unit-size) * 8);
   margin-top: calc(var(--unit-size) * 4);
   margin-bottom: calc(var(--unit-size) * 3);
   text-transform: capitalize;
-  color: var(--secondary);
   font-family: "Comic Sans MS";
   text-shadow: 0 0 7px #fff, 0 0 10px #fff;
 }
@@ -187,11 +178,10 @@ body {
 }
 .reel {
   aspect-ratio: 1.16;
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--primary);
   border-radius: var(--unit-size);
   overflow: hidden;
   position: relative;
-  box-shadow: 0 0 10px 5px var(--secondary);
 }
 .reelPlate {
   position: relative;
@@ -218,7 +208,6 @@ body {
   }
 }
 .startButton {
-  background: var(--secondary);
   color: var(--primary);
   cursor: pointer;
   border-radius: var(--unit-size);
@@ -229,7 +218,6 @@ body {
   padding: calc(var(--unit-size) * 3);
   font-weight: bold;
   font-size: calc(var(--unit-size) * 3);
-  box-shadow: 0 0 10px 5px var(--secondary);
 }
 .startButton:hover {
   border-bottom: 1px solid var(--primary);
@@ -238,7 +226,6 @@ body {
 .startButton:active {
   border-top: 2px solid var(--primary);
   padding-bottom: calc((var(--unit-size) * 3) - 1px);
-  box-shadow: 0 0 8px 4px var(--secondary);
 }
 .teamMembers {
   margin-top: calc(var(--unit-size) * 4);
@@ -257,7 +244,6 @@ body {
   padding: calc(var(--unit-size) * 2);
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 0 10px 5px var(--secondary);
 }
 .teamMember:hover {
   border-bottom: 1px solid var(--primary);
@@ -266,11 +252,9 @@ body {
 .teamMember:active {
   border-top: 2px solid var(--primary);
   padding-bottom: calc((var(--unit-size) * 2) - 1px);
-  box-shadow: 0 0 8px 4px var(--secondary);
 }
 .teamMember--inactive {
   opacity: 0.3;
-  box-shadow: 0 0 2px 2px var(--secondary);
 }
 .toggleMute {
   cursor: pointer;

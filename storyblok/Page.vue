@@ -5,11 +5,9 @@
       :key="blok._uid"
       :blok="blok"
     />
-    test
   </div>
 </template>
 
 <script setup>
 defineProps({ blok: Object });
-console.log("test");
 </script>

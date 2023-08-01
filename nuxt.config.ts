@@ -7,5 +7,6 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['fsevents'],
-  }
+  },
+  css: ['~/assets/css/tokens.css'],
 });

@@ -167,7 +167,6 @@ onMounted(() => {
   margin-top: calc(var(--unit-size) * 4);
   margin-bottom: calc(var(--unit-size) * 3);
   text-transform: capitalize;
-  font-family: "Comic Sans MS";
   text-shadow: 0 0 7px #fff, 0 0 10px #fff;
 }
 .reels {
@@ -183,6 +182,16 @@ onMounted(() => {
   border-radius: var(--unit-size);
   overflow: hidden;
   position: relative;
+  box-shadow: inset 0px 11px 8px -10px #ccc, inset 0px -11px 8px -10px #ccc;
+}
+.reel:after {
+  content: "";
+  box-shadow: inset 0px 10px 15px -6px rgba(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .reelPlate {
   position: relative;
@@ -209,7 +218,8 @@ onMounted(() => {
   }
 }
 .startButton {
-  color: var(--primary);
+  background: rgb(8, 204, 8);
+  color: var(--secondary);
   cursor: pointer;
   border-radius: var(--unit-size);
   border: 1px solid var(--primary);
@@ -227,6 +237,9 @@ onMounted(() => {
 .startButton:active {
   border-top: 2px solid var(--primary);
   padding-bottom: calc((var(--unit-size) * 3) - 1px);
+}
+.startButton[disabled] {
+  opacity: 0.3;
 }
 .teamMembers {
   margin-top: calc(var(--unit-size) * 4);

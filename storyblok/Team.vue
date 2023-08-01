@@ -190,13 +190,13 @@ onMounted(() => {
   transform: translateY(-100%);
 }
 .reelPlate--0.animate {
-  animation: spin 10s ease-in-out 0.1s forwards;
+  animation: spin 7s ease-in-out 0.1s forwards;
 }
 .reelPlate--1.animate {
-  animation: spin 10s ease-in-out 0.6s forwards;
+  animation: spin 7s ease-in-out 0.6s forwards;
 }
 .reelPlate--2.animate {
-  animation: spin 10s ease-in-out 1.1s forwards;
+  animation: spin 7s ease-in-out 1.1s forwards;
 }
 @keyframes spin {
   0% {

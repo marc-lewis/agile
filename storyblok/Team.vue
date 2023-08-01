@@ -2,6 +2,7 @@
 import { Howl, Howler } from "howler";
 import Card from "@/components/Card.vue";
 
+Howler.volume(0.05);
 const { slug } = useRoute().params;
 const teamName = slug[1];
 const props = defineProps({ blok: Object });
